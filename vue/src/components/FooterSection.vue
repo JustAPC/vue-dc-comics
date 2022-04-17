@@ -142,7 +142,7 @@ a:hover {
 
 .img-container {
   width: 40%;
-  margin-left: 100px;
+  margin-left: 70px;
 }
 
 .dc-logo-bg {

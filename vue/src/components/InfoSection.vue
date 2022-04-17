@@ -1,8 +1,8 @@
 <template>
   <div id="info-section">
-    <div class="container d-flex justify-content-between align-items-center py-4">
+    <div id="info-container" class="container d-flex justify-content-between align-items-center">
       <div>
-        <p>SIGN-UP NOW!</p>
+        <a href="#">SIGN-UP NOW!</a>
       </div>
 
       <div class="d-flex">
@@ -31,19 +31,23 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  z-index: 1;
 }
 
 #info-section {
   background-color: #303030;
 }
 
-div p {
+#info-container {
+  padding: 35px 0;
+}
+
+div a {
   color: white;
   padding: 10px 13px;
   border: 2px solid #0282f9;
   font-size: 0.9em;
   font-weight: bold;
+  text-decoration: none;
 }
 
 h6 {
