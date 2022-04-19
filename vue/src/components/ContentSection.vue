@@ -4,10 +4,7 @@
     <div class="container position-relative">
       <span id="current-series">CURRENT SERIES</span>
       <ul class="pt-5 d-flex flex-wrap justify-content-between">
-        <li class="cards col-2 pb-4" v-for="(comic, i) in comicsList" :key="i">
-          <div class="card-img" :style="{ backgroundImage: 'url(' + comic.thumb + ')' }"></div>
-          <p class="pt-3 description">{{ comic.series }}</p>
-        </li>
+        <ComicsCard v-for="(comic, i) in comicsList" :key="i" :thumb="comic.thumb" :series="comic.series" />
       </ul>
 
       <a href="#" class="d-flex justify-content-center pb-4">
@@ -18,9 +15,13 @@
 </template>
 
 <script>
+import ComicsCard from "../components/ComicsCard.vue";
+
 export default {
   name: "ContentSection",
-
+  components: {
+    ComicsCard,
+  },
   data() {
     return {
       comicsList: [
@@ -104,6 +105,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #content-menu {
   background-color: #1c1c1c;
 }
@@ -125,22 +131,6 @@ export default {
   left: 0;
 }
 
-ul li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-.card-img {
-  height: 150px;
-  width: 150px;
-  background-size: cover;
-}
-
-p {
-  font-size: 0.8em;
-  color: white;
-}
-
 #load-more-button {
   color: white;
   font-size: 0.8em;
@@ -148,9 +138,5 @@ p {
   padding: 10px 50px;
   background-color: #0282f9;
   text-decoration: none;
-}
-
-.description {
-  text-transform: uppercase;
 }
 </style>

@@ -58,40 +58,6 @@
 <script>
 export default {
   name: "FooterSection",
-  data: function () {
-    return {
-      dcComicsList: [
-        {
-          name: "Characters",
-          url: "#",
-        },
-        {
-          name: "Comics",
-          url: "#",
-        },
-        {
-          name: "Movies",
-          url: "#",
-        },
-        {
-          name: "TV",
-          url: "#",
-        },
-        {
-          name: "Games",
-          url: "#",
-        },
-        {
-          name: "Videos",
-          url: "#",
-        },
-        {
-          name: "News",
-          url: "#",
-        },
-      ],
-    };
-  },
 };
 </script>
 
