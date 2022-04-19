@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import "bootstrap";
 import HeaderTop from "./components/HeaderTop.vue";
 import ContentSection from "./components/ContentSection.vue";
 import NavBar from "./components/NavBar.vue";
@@ -33,7 +34,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 20px;
 }
 
 * {
@@ -44,5 +44,6 @@ export default {
 
 .container {
   padding: 0;
+  width: 70%;
 }
 </style>

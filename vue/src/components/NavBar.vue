@@ -3,8 +3,10 @@
     <div class="container">
       <ul class="py-5 d-flex justify-content-around align-items-center">
         <li v-for="(elm, i) in navbarList" :key="i">
-          <img :src="elm.img" :alt="`${elm.name}`" />
-          <a href="#">{{ elm.name }}</a>
+          <a href="">
+            <img :src="elm.img" :alt="`${elm.name}`" :style="{ height: 50 + 'px', width: 45 + 'px' }" />
+            <span>{{ elm.name }}</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -19,23 +21,23 @@ export default {
       navbarList: [
         {
           name: "Digital Comics",
-          img: "../assets/img/buy-comics-digital-comics.png",
+          img: require("../assets/img/buy-comics-digital-comics.png"),
         },
         {
           name: "DC Merchandise",
-          img: "../assets/img/buy-comics-merchandise.png",
+          img: require("../assets/img/buy-comics-merchandise.png"),
         },
         {
           name: "Subscription",
-          img: "../assets/img/buy-comics-subscriptions.png",
+          img: require("../assets/img/buy-comics-subscriptions.png"),
         },
         {
           name: "Comic shop locator",
-          img: "../assets/img/buy-comics-shop-locator.png",
+          img: require("../assets/img/buy-comics-shop-locator.png"),
         },
         {
           name: "DC Power visa",
-          img: "../assets/img/buy-dc-power-visa.svg",
+          img: require("../assets/img/buy-dc-power-visa.svg"),
         },
       ],
     };
@@ -62,7 +64,7 @@ li img {
   width: 20%;
 }
 
-a {
+span {
   text-decoration: none;
   color: white;
   padding-left: 20px;
