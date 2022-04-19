@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderTop></HeaderTop>
-    <HeaderMid></HeaderMid>
+    <ContentSection></ContentSection>
     <NavBar></NavBar>
     <FooterSection></FooterSection>
     <InfoSection></InfoSection>
@@ -10,7 +10,7 @@
 
 <script>
 import HeaderTop from "./components/HeaderTop.vue";
-import HeaderMid from "./components/HeaderMid.vue";
+import ContentSection from "./components/ContentSection.vue";
 import NavBar from "./components/NavBar.vue";
 import FooterSection from "./components/FooterSection.vue";
 import InfoSection from "./components/InfoSection.vue";
@@ -18,7 +18,7 @@ export default {
   name: "App",
   components: {
     HeaderTop,
-    HeaderMid,
+    ContentSection,
     NavBar,
     FooterSection,
     InfoSection,

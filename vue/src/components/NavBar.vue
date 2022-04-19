@@ -49,7 +49,6 @@ export default {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  z-index: 1;
 }
 .navbar-container {
   background-color: #0282f9;

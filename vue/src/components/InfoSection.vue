@@ -2,17 +2,17 @@
   <div id="info-section">
     <div id="info-container" class="container d-flex justify-content-between align-items-center">
       <div>
-        <a href="#">SIGN-UP NOW!</a>
+        <a href="#" id="signup">SIGN-UP NOW!</a>
       </div>
 
-      <div class="d-flex">
+      <div class="d-flex align-items-center">
         <h6>FOLLOW US</h6>
         <div class="icons">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-          <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+          <a href="#" class="mx-2"><img src="../assets/img/footer-facebook.png" alt="" /></a>
+          <a href="#" class="mx-2"><img src="../assets/img/footer-twitter.png" alt="" /></a>
+          <a href="#" class="mx-2"><img src="../assets/img/footer-youtube.png" alt="" /></a>
+          <a href="#" class="mx-2"><img src="../assets/img/footer-pinterest.png" alt="" /></a>
+          <a href="#" class="mx-2"><img src="../assets/img/footer-periscope.png" alt="" /></a>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ export default {
   padding: 35px 0;
 }
 
-div a {
+#signup {
   color: white;
   padding: 10px 13px;
   border: 2px solid #0282f9;
@@ -56,12 +56,7 @@ h6 {
   margin-right: 15px;
 }
 
-.icons a {
-  color: #303030;
-  padding: 5px 7px;
-  margin: 0 7px;
-  border-radius: 100%;
-  border: 1px solid #797979;
-  background-color: #797979;
+.icons a img {
+  width: 12%;
 }
 </style>

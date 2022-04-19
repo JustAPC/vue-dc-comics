@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "HeaderMid",
+  name: "ContentSection",
   props: {
     msg: String,
   },
